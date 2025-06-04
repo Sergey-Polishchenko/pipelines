@@ -1,0 +1,17 @@
+version: "2"
+
+linters:
+  enable:
+    - govet
+    - errcheck
+    - staticcheck
+    - unused
+
+run:
+  tests: true
+  timeout: 2m
+
+issues:
+  exclude-use-default: false
+  max-same-issues: 5
+  max-issues-per-linter: 0
